@@ -1,27 +1,81 @@
-/* WHIFF editorial layer */
-:root{--editorial-serif:Georgia,"Times New Roman",serif}
-.hero h1,.introText,.manifesto h2,.story h2,.copy h3,.collection h2,.ritual h2,.finder h2,.faq h2,.footer .big{font-family:var(--editorial-serif);font-weight:400;letter-spacing:-.065em}
-.hero h1,.copy h3,.collection h2,.finder h2,.faq h2{font-weight:900;font-family:Inter,Arial,sans-serif;letter-spacing:-.105em}
-.introText,.storyCopy strong,.journalCard h3,.ritual h2{font-family:var(--editorial-serif)}
-.priceSection{position:relative;background:#111;color:#f3ecdf;padding:11vw 6vw;display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;overflow:hidden}
-.priceSection:before{content:"STAGES";position:absolute;right:-7vw;top:-5vw;font:900 22vw/1 Inter,Arial,sans-serif;letter-spacing:-.12em;color:#fff05;transform:rotate(-8deg);pointer-events:none}
-.priceSection>div{position:relative;z-index:1}
-.priceSection h2{font:900 clamp(80px,12vw,170px)/.72 Inter,Arial,sans-serif;letter-spacing:-.11em;margin:20px 0 25px}
-.priceSection>div:first-child p{max-width:560px;font-size:15px;line-height:1.6;color:#c8c0b5}
-.priceCard{background:#171717;border:1px solid #555;padding:34px;box-shadow:0 25px 70px #0004}
-.priceRow{border-top:1px solid #444;border-bottom:1px solid #444;padding:28px 0;display:flex;align-items:baseline;gap:18px}
-.priceNow{font-size:clamp(80px,10vw,140px);font-weight:900;letter-spacing:-.11em;line-height:.75}
-.priceCard .mrp{font-size:20px;color:#888}
-.offerLine{font-size:12px;line-height:1.6;color:#c8c0b5}
-.collectionOffer{margin-top:28px!important;background:#333!important}
-.collectionOffer>div{background:#171717!important;padding:24px!important;min-height:140px}
-.collectionOffer strong{display:block;font:500 42px/1 var(--editorial-serif);letter-spacing:-.04em;margin:16px 0 8px}
-.collectionOffer small{display:block;font:9px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:#aaa}
-.stagePrice{display:flex;align-items:baseline;gap:10px;margin:20px 0 25px;font-size:10px}
-.stagePrice b{font-size:28px;letter-spacing:-.06em}
-.stagePrice .mrp{font-size:14px;color:#777}
-.stageActions .btn.fill{background:#f3ecdf;color:#111;border-color:#f3ecdf}
-.tile h3{font-family:var(--editorial-serif);font-weight:500}
-.journalCard h3{font-family:var(--editorial-serif);font-weight:500}
-.faq summary{font-family:Inter,Arial,sans-serif}
-@media(max-width:760px){.priceSection{display:block;padding:24vw 6vw}.priceCard{margin-top:45px;padding:24px}.priceSection:before{font-size:36vw;right:-10vw;top:22vw}.priceSection h2{font-size:23vw}.priceNow{font-size:90px}.collectionOffer{grid-template-columns:1fr!important}.collectionOffer>div{min-height:125px}.stagePrice b{font-size:25px}}
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&display=swap");
+
+/* WHIFF / editorial typography system */
+:root{
+  --editorial-serif:"Bodoni Moda", Georgia, "Times New Roman", serif;
+  --editorial-sans:Inter, Arial, sans-serif;
+  --editorial-mono:"DM Mono", monospace;
+}
+
+/* Display serif: elegant, high-contrast, fashion/editorial. Inter remains the structural sans. DM Mono remains metadata. */
+.hero h1,.introText,.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2,.footer .big,
+.stageHero h1,.story h2,.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2,.storyBottom h2,
+.storyHero h1,.shopHead h1{
+  font-family:var(--editorial-serif);
+  font-weight:500;
+  font-style:normal;
+  letter-spacing:-.055em;
+  text-rendering:optimizeLegibility;
+}
+
+.hero h1{font-size:clamp(82px,18vw,235px);line-height:.76;letter-spacing:-.075em}
+.introText{font-size:clamp(34px,5vw,72px);line-height:1.02}
+.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2{font-weight:500;line-height:.8;letter-spacing:-.06em}
+
+/* Keep functional/UI typography unmistakably sans. */
+.navlinks,.btn,.whatsappBtn,.mono,.meaning,.pill,.stagePrice,.choice,.faq summary,
+.descriptor,.storyMicro,.packMeta,.packCopy,.noteIndex,.scentMap b,.literarySource,.priceNow,.mrp,
+.shopHead p,.cartInfo p,.orderForm label,.formNote{font-family:var(--editorial-sans)}
+
+.navlinks,.btn,.whatsappBtn,.mono,.choice,.pill,.meaning{letter-spacing:.08em}
+
+/* Editorial body copy: calmer line length and more typographic contrast. */
+.introText,.manifestoText,.journalCard p,.faq p,.stageCopy p,.storyBody p,.literaryText,.ritualStory p,.wear p,.discoverCard p{
+  font-family:var(--editorial-sans);
+}
+
+.storyLead{font-family:var(--editorial-sans);font-weight:500;letter-spacing:-.025em}
+
+/* Pull quotes use the same high-contrast display voice, rather than default Georgia. */
+.quote,.literaryQuote{font-family:var(--editorial-serif);font-weight:400;letter-spacing:-.035em}
+
+/* Stage cards and product names: serif display, restrained sans metadata. */
+.stageCopy h3,.tile h3,.journalCard h3,.relatedStoryCard h3,.noteCard h3{
+  font-family:var(--editorial-serif);
+  font-weight:600;
+  letter-spacing:-.055em;
+  line-height:.86;
+}
+
+.stageCopy h3{font-size:clamp(58px,8.5vw,132px)}
+.tile h3{font-size:clamp(50px,6.5vw,86px)}
+
+/* Price typography: editorial number, utilitarian labels. */
+.priceSection h2{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.06em;line-height:.78}
+.priceNow{font-family:var(--editorial-sans);font-weight:800;letter-spacing:-.075em}
+.collectionOffer strong{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.035em}
+
+/* Cart / checkout: stop the all-caps grotesk wall. */
+.shopHead h1{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.065em;line-height:.8}
+.cartInfo h3{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.055em;line-height:.85}
+
+/* Story pages: the serif is the voice of the story, Inter is the interface. */
+.storyHero h1{font-size:clamp(78px,13vw,190px);line-height:.76;letter-spacing:-.065em;font-weight:600}
+.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2{font-weight:500;line-height:.82;letter-spacing:-.06em}
+.storyIntro h2{font-size:clamp(54px,7.5vw,108px)}
+.literary h2{font-size:clamp(54px,7.5vw,108px)}
+.architecture h2,.discovery h2{font-size:clamp(54px,8vw,116px)}
+.storyBottom h2{font-size:clamp(70px,13vw,175px);letter-spacing:-.065em}
+
+/* A small serif/sans alternation makes the pages feel designed rather than templated. */
+.storyIntro .storyBody p:first-child:first-letter,.dropcap:first-letter{
+  font-family:var(--editorial-serif);
+  font-weight:500;
+}
+
+@media(max-width:800px){
+  .hero h1{font-size:clamp(72px,20vw,150px)}
+  .storyHero h1{font-size:clamp(70px,22vw,145px)}
+  .stageCopy h3{font-size:clamp(56px,15vw,100px)}
+  .shopHead h1{font-size:clamp(72px,19vw,140px)}
+}
