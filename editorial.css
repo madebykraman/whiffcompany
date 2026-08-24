@@ -1,53 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=DM+Mono:wght@400;500&family=Satoshi:wght@300;400;500;600;700;800;900&display=swap");
-
 :root{--editorial-serif:"Bodoni Moda",Georgia,"Times New Roman",serif;--editorial-sans:"Satoshi",Arial,sans-serif;--editorial-mono:"DM Mono",monospace}
-
-/* WHIFF typography: high-contrast editorial serif for voice, Satoshi for structure, mono for metadata. */
 body{font-family:var(--editorial-sans)}
-
-.hero h1,.introText,.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2,.footer .big,.stageHero h1,.story h2,.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2,.storyBottom h2,.storyHero h1,.shopHead h1,.storyPriceCard h2,.priceStory h2,.emptyCart h2{
-font-family:var(--editorial-serif);font-weight:500;font-style:normal;text-rendering:optimizeLegibility;font-kerning:normal;letter-spacing:-.045em}
-
-.hero h1{font-size:clamp(82px,18vw,235px);line-height:.79;letter-spacing:-.065em}
-.introText{font-size:clamp(34px,5vw,72px);line-height:1.02}
-.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2{font-weight:500;line-height:.84;letter-spacing:-.05em}
-
-.navlinks,.btn,.whatsappBtn,.mono,.meaning,.pill,.stagePrice,.choice,.faq summary,.descriptor,.storyMicro,.packMeta,.packCopy,.noteIndex,.scentMap b,.literarySource,.priceNow,.mrp,.shopHead p,.cartInfo p,.orderForm label,.formNote,.wearItem span,.profileRows span,.offer{font-family:var(--editorial-sans)}
-.navlinks,.btn,.whatsappBtn,.mono,.choice,.pill,.meaning{letter-spacing:.07em}
-
-.introText,.manifestoText,.journalCard p,.faq p,.stageCopy p,.storyBody p,.literaryText,.ritualStory p,.wear p,.discoverCard p{font-family:var(--editorial-sans)}
-.storyLead{font-family:var(--editorial-sans);font-weight:500;letter-spacing:-.025em}
-.quote,.literaryQuote{font-family:var(--editorial-serif);font-weight:400;letter-spacing:-.03em}
-
-.stageCopy h3,.tile h3,.journalCard h3,.relatedStoryCard h3,.noteCard h3,.cartInfo h3{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.045em;line-height:.88}
-.stageCopy h3{font-size:clamp(58px,8.5vw,132px)}
-.tile h3{font-size:clamp(50px,6.5vw,86px)}
-
-.priceSection h2{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.05em;line-height:.82}
-.priceNow{font-family:var(--editorial-sans);font-weight:800;letter-spacing:-.06em}
-.collectionOffer strong{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.03em}
-.shopHead h1{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.055em;line-height:.84}
-.cartInfo h3{font-size:clamp(42px,5vw,70px)}
-
-.storyHero h1{font-size:clamp(78px,13vw,190px);line-height:.78;letter-spacing:-.055em;font-weight:600}
-.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2{font-weight:500;line-height:.84;letter-spacing:-.05em}
-.storyIntro h2{font-size:clamp(54px,7.5vw,108px)}
-.literary h2{font-size:clamp(54px,7.5vw,108px)}
-.architecture h2,.discovery h2{font-size:clamp(54px,8vw,116px)}
-.storyBottom h2{font-size:clamp(70px,13vw,175px);letter-spacing:-.055em}
-.storyPriceCard h2{font-size:clamp(54px,7vw,105px);line-height:.84}
-
-.storyIntro .storyBody p:first-child:first-letter,.dropcap:first-letter{font-family:var(--editorial-serif);font-weight:500}
-
-/* Keep the large ₹299 treatment legible. It is a price, not a background graphic. */
-.priceStory .storyPriceCard:before{display:none}
-.storyPriceCard .pricePair strong{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.07em}
-.storyPriceCard .old{font-family:var(--editorial-sans);font-size:18px}
-
-@media(max-width:800px){
-.hero h1{font-size:clamp(72px,20vw,150px);line-height:.82}
-.storyHero h1{font-size:clamp(70px,22vw,145px);line-height:.8}
-.stageCopy h3{font-size:clamp(56px,15vw,100px)}
-.shopHead h1{font-size:clamp(72px,19vw,140px)}
-.storyPriceCard .pricePair strong{font-size:clamp(70px,22vw,120px)}
-}
+.hero h1,.introText,.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2,.footer .big,.stageHero h1,.story h2,.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2,.storyBottom h2,.storyHero h1,.shopHead h1,.storyPriceCard h2,.priceStory h2,.emptyCart h2,.stageCopy h3,.tile h3,.journalCard h3,.relatedStoryCard h3,.noteCard h3,.cartInfo h3{font-family:var(--editorial-serif);font-weight:500;font-style:normal;text-rendering:optimizeLegibility;font-kerning:normal;letter-spacing:-.045em}
+.hero h1{font-size:clamp(82px,18vw,235px);line-height:.79;letter-spacing:-.065em}.introText{font-size:clamp(34px,5vw,72px);line-height:1.02}.manifesto h2,.collection h2,.ritual h2,.finder h2,.faq h2{line-height:.84;letter-spacing:-.05em}
+.navlinks,.btn,.whatsappBtn,.mono,.meaning,.pill,.stagePrice,.choice,.faq summary,.descriptor,.storyMicro,.packMeta,.packCopy,.noteIndex,.scentMap b,.literarySource,.priceNow,.mrp,.shopHead p,.cartInfo p,.orderForm label,.formNote,.wearItem span,.profileRows span,.offer,.storyBody p,.literaryText,.ritualStory p,.wear p,.discoverCard p,.manifestoText,.journalCard p,.faq p{font-family:var(--editorial-sans)}
+.navlinks,.btn,.whatsappBtn,.mono,.choice,.pill,.meaning{letter-spacing:.07em}.storyLead{font-family:var(--editorial-sans);font-weight:500;letter-spacing:-.025em}.quote,.literaryQuote{font-family:var(--editorial-serif);font-weight:400;letter-spacing:-.03em}
+.stageCopy h3{font-size:clamp(58px,8.5vw,132px)}.tile h3{font-size:clamp(50px,6.5vw,86px)}.priceSection h2{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.05em;line-height:.82}.priceNow{font-weight:800;letter-spacing:-.06em}.collectionOffer strong{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.03em}.shopHead h1{line-height:.84}.cartInfo h3{font-size:clamp(42px,5vw,70px)}
+.storyHero h1{font-size:clamp(78px,13vw,190px);line-height:.78;letter-spacing:-.055em;font-weight:600}.storyIntro h2,.literary h2,.architecture h2,.discovery h2,.characterGrid h2,.ritualStory h2,.relatedStory h2{line-height:.84;letter-spacing:-.05em}.storyIntro h2,.literary h2{font-size:clamp(54px,7.5vw,108px)}.architecture h2,.discovery h2{font-size:clamp(54px,8vw,116px)}.storyBottom h2{font-size:clamp(70px,13vw,175px);letter-spacing:-.055em}.storyPriceCard h2{font-size:clamp(54px,7vw,105px);line-height:.84}.storyIntro .storyBody p:first-child:first-letter,.dropcap:first-letter{font-family:var(--editorial-serif);font-weight:500}.priceStory .storyPriceCard:before{display:none}.storyPriceCard .pricePair strong{font-family:var(--editorial-serif);font-weight:500;letter-spacing:-.07em}.storyPriceCard .old{font-family:var(--editorial-sans);font-size:18px}
+.olfactiveOverview{padding:clamp(70px,10vw,150px) 6vw;border-top:1px solid rgba(255,255,255,.16)}.olfactiveOverview .sectionHead{max-width:1100px}.olfactiveOverview h2{font-family:var(--editorial-serif);font-size:clamp(64px,10vw,150px);line-height:.8;letter-spacing:-.055em;font-weight:500;margin:28px 0}.olfactiveOverview .sectionHead p{font-family:var(--editorial-sans);max-width:600px;font-size:18px;line-height:1.55;opacity:.72}.olfactiveRail{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.18);margin-top:70px}.olfactiveRail div{min-height:120px;padding:22px 18px;border-right:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:10px}.olfactiveRail div:first-child{border-left:1px solid rgba(255,255,255,.18)}.olfactiveRail b{font-family:var(--editorial-sans);font-size:12px;letter-spacing:.16em}.olfactiveRail span{font-family:var(--editorial-mono);font-size:10px;opacity:.6;line-height:1.5}
+@media(max-width:800px){.hero h1{font-size:clamp(72px,20vw,150px);line-height:.82}.storyHero h1{font-size:clamp(70px,22vw,145px);line-height:.8}.stageCopy h3{font-size:clamp(56px,15vw,100px)}.shopHead h1{font-size:clamp(72px,19vw,140px)}.storyPriceCard .pricePair strong{font-size:clamp(70px,22vw,120px)}.olfactiveOverview h2{font-size:clamp(58px,18vw,105px)}.olfactiveRail{grid-template-columns:repeat(2,1fr);margin-top:45px}.olfactiveRail div:nth-child(3),.olfactiveRail div:nth-child(5){border-left:1px solid rgba(255,255,255,.18)}.olfactiveRail div:nth-child(4),.olfactiveRail div:nth-child(5){border-top:1px solid rgba(255,255,255,.18)}}
