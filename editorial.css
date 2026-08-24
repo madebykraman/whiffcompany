@@ -1,0 +1,27 @@
+/* WHIFF editorial layer */
+:root{--editorial-serif:Georgia,"Times New Roman",serif}
+.hero h1,.introText,.manifesto h2,.story h2,.copy h3,.collection h2,.ritual h2,.finder h2,.faq h2,.footer .big{font-family:var(--editorial-serif);font-weight:400;letter-spacing:-.065em}
+.hero h1,.copy h3,.collection h2,.finder h2,.faq h2{font-weight:900;font-family:Inter,Arial,sans-serif;letter-spacing:-.105em}
+.introText,.storyCopy strong,.journalCard h3,.ritual h2{font-family:var(--editorial-serif)}
+.priceSection{position:relative;background:#111;color:#f3ecdf;padding:11vw 6vw;display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;overflow:hidden}
+.priceSection:before{content:"STAGES";position:absolute;right:-7vw;top:-5vw;font:900 22vw/1 Inter,Arial,sans-serif;letter-spacing:-.12em;color:#fff05;transform:rotate(-8deg);pointer-events:none}
+.priceSection>div{position:relative;z-index:1}
+.priceSection h2{font:900 clamp(80px,12vw,170px)/.72 Inter,Arial,sans-serif;letter-spacing:-.11em;margin:20px 0 25px}
+.priceSection>div:first-child p{max-width:560px;font-size:15px;line-height:1.6;color:#c8c0b5}
+.priceCard{background:#171717;border:1px solid #555;padding:34px;box-shadow:0 25px 70px #0004}
+.priceRow{border-top:1px solid #444;border-bottom:1px solid #444;padding:28px 0;display:flex;align-items:baseline;gap:18px}
+.priceNow{font-size:clamp(80px,10vw,140px);font-weight:900;letter-spacing:-.11em;line-height:.75}
+.priceCard .mrp{font-size:20px;color:#888}
+.offerLine{font-size:12px;line-height:1.6;color:#c8c0b5}
+.collectionOffer{margin-top:28px!important;background:#333!important}
+.collectionOffer>div{background:#171717!important;padding:24px!important;min-height:140px}
+.collectionOffer strong{display:block;font:500 42px/1 var(--editorial-serif);letter-spacing:-.04em;margin:16px 0 8px}
+.collectionOffer small{display:block;font:9px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:#aaa}
+.stagePrice{display:flex;align-items:baseline;gap:10px;margin:20px 0 25px;font-size:10px}
+.stagePrice b{font-size:28px;letter-spacing:-.06em}
+.stagePrice .mrp{font-size:14px;color:#777}
+.stageActions .btn.fill{background:#f3ecdf;color:#111;border-color:#f3ecdf}
+.tile h3{font-family:var(--editorial-serif);font-weight:500}
+.journalCard h3{font-family:var(--editorial-serif);font-weight:500}
+.faq summary{font-family:Inter,Arial,sans-serif}
+@media(max-width:760px){.priceSection{display:block;padding:24vw 6vw}.priceCard{margin-top:45px;padding:24px}.priceSection:before{font-size:36vw;right:-10vw;top:22vw}.priceSection h2{font-size:23vw}.priceNow{font-size:90px}.collectionOffer{grid-template-columns:1fr!important}.collectionOffer>div{min-height:125px}.stagePrice b{font-size:25px}}
